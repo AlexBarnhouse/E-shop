@@ -4,80 +4,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="style.css">
     <title>Main</title>
 </head>
 
 <body>
-    <header>
-        <div class="container">
-            <div class="header__left">
-                <img src="" alt="logo">
-                <img src="" alt="search">
-            </div>
+    <header class="header">
+        <div class="header__bar container">
+            <ul class="header__left">
+                <li class="left-item">
+                    <a class="header__logo" href="index.html">
+                        <img src="img/logo.svg" alt="logo">
+                    </a>
+                </li>
+               <li class="left-item">
+                   <img class="header__search" src="img/search.svg" alt="search">
+               </li>
+            </ul>
 
-            <div class="header__right">
-                <div class="menu">
-                    <ul class="menu__root">
-                        <li>Menu</li>
-                        <li>
-                            Man
-                            <ul class="menu__man">
-                                <li>Accessories</li>
-                                <li>Bags</li>
-                                <li>Denim</li>
-                                <li>T-Shirts</li>
-                            </ul>
-                        </li>
-                        <li>
-                            Woman
-                            <ul class="menu__woman">
-                                <li>Accessories</li>
-                                <li>Jackets & Coats</li>
-                                <li>Polos</li>
-                                <li>T-Shirts</li>
-                                <li>Shirts</li>
-                            </ul>
-                        </li>
-                        <li>
-                            Kids
-                            <ul class="menu__kids">
-                                <li>Accessories</li>
-                                <li>Jackets & Coats</li>
-                                <li>Polos</li>
-                                <li>T-Shirts</li>
-                                <li>Shirts</li>
-                                <li>Bags</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
+            <ul class="header__right">
+                <li class="right-item ">
+                    <img src="img/menu.svg" alt="menu">
+                    <nav class="menu">
+                        <div class="menu-block">
+                            <h2 class="menu-block-title pink-color">Man</h2>
+                            <a class="menu-block-item" href="#">Accessories</a>
+                            <a class="menu-block-item" href="#">Bags</a>
+                            <a class="menu-block-item" href="#">Denim</a>
+                            <a class="menu-block-item" href="#">T-Shirts</a>
+                        </div>
 
-                <div class="account">
-                    <img src="" alt="account">
-                </div>
+                        <div class="menu-block">
+                            <h2 class="menu-block-title pink-color">Woman</h2>
+                            <a class="menu-block-item" href="#">Accessories</a>
+                            <a class="menu-block-item" href="#">Jackets & Coats</a>
+                            <a class="menu-block-item" href="#">Polos</a>
+                            <a class="menu-block-item" href="#">T-Shirts</a>
+                            <a class="menu-block-item" href="#">Shirts</a>
+                        </div>
 
-                <div class="cart">
-                    <img src="" alt="cart">
-                </div>
-            </div>
+                        <div class="menu-block">
+                            <h2 class="menu-block-title pink-color">Kids</h2>
+                            <a class="menu-block-item" href="#">Accessories</a>
+                            <a class="menu-block-item" href="#">Jackets & Coats</a>
+                            <a class="menu-block-item" href="#">Polos</a>
+                            <a class="menu-block-item" href="#">T-Shirts</a>
+                            <a class="menu-block-item" href="#">Shirts</a>
+                            <a class="menu-block-item" href="#">Bags</a>
+                        </div>
+                    </nav>
+                </li>
+                
+                <li class="right-item">
+                    <a href="#"><img src="img/login.svg" alt="account"></a>
+                </li>
+            
+                <li class="right-item">
+                    <a href="#"><img src="img/cart.svg" alt="cart"></a>
+                </li>
+            </ul>
         </div>
     </header>
 
-    <main>
+    <div class="main">
         <div class="top">
-            <div class="container">
-                <h1>THE BRAND OF LUXERIOUS FASHION</h1>
+            <div class="top__content container">
+                <img class="top__img" src="img/top__img.png" alt="man">
+                <div class="top__slogan">
+                    <div class="slogan__text">
+                        <p class="top__slogan-top">THE BRAND</p>
+                        <p class="top__slogan-bottom">OF LUXERIOUS <span class="pink-color">FASHION</span></p>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <div class="special-offers container"></div>
+        <section class="special-offers container">
+            <div class="offers__top">
+                <a href="#" class="offers__top-item">
+                    <img class="offers__img" src="img/women-banner.png" alt="for women">
+                    <div class="top-item-text">
+                        <p class="item-text-top">30% OFF</p>
+                        <p class="item-text-bottom pink-color">FOR WOMEN</p>
+                    </div>
+                </a>
 
-        <div class="featured-items container"></div>
+                <div class="offers__top-item">
+                    <img class="offers__img" src="img/men-banner.png" alt="for men">
+                    <div class="top-item-text">
+                        <p class="item-text-top">HOT DEAL</p>
+                        <p class="item-text-bottom pink-color">FOR MEN</p>
+                    </div>
+                </div>
 
-    </main>
+                <div class="offers__top-item">
+                    <img class="offers__img" src="img/kids-banner.png" alt="for kids">
+                    <div class="top-item-text">
+                        <p class="item-text-top">NEW ARRIVALS</p>
+                        <p class="item-text-bottom pink-color">FOR KIDS</p>
+                    </div>
+                </div>
 
-    <footer>
-        <div class="prefooter"></div>
+            </div>
+            <div class="offers__bottom">
+                <div class="offers__bottom-item">
+                    <img class="offers__img" src="img/accessories-banner.png" alt="accessories">
+                    <div class="bottom-item-text">
+                        <p class="item-text-top">LUXIROUS & TRENDY</p>
+                        <p class="item-text-bottom pink-color">ACCESSORIES</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-items container"></section>
+
+    </div>
+
+    <footer class="footer">
 
         <div class="footer__top"></div>
 
