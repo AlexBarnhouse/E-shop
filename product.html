@@ -2,9 +2,283 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Lato">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/677da7751d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Product</title>
 </head>
 <body>
+    <header class="header">
+    <div class="header__bar wrap-box">
+        <ul class="header__left">
+            <li class="left-item">
+                <a class="header__logo" href="index.html">
+                    <img src="img/logo.svg" alt="logo">
+                </a>
+            </li>
+            <li class="left-item">
+                <img class="header__search" src="img/search.svg" alt="search">
+            </li>
+        </ul>
+
+        <ul class="header__right">
+            <li class="right-item menu-button">
+                <img src="img/menu.svg" alt="menu">
+                <nav class="menu">
+                    <div class="menu-block">
+                        <h2 class="menu-block-title pink-color">Man</h2>
+                        <a class="menu-block-item" href="#">Accessories</a>
+                        <a class="menu-block-item" href="#">Bags</a>
+                        <a class="menu-block-item" href="#">Denim</a>
+                        <a class="menu-block-item" href="#">T-Shirts</a>
+                    </div>
+
+                    <div class="menu-block">
+                        <h2 class="menu-block-title pink-color">Woman</h2>
+                        <a class="menu-block-item" href="#">Accessories</a>
+                        <a class="menu-block-item" href="#">Jackets & Coats</a>
+                        <a class="menu-block-item" href="#">Polos</a>
+                        <a class="menu-block-item" href="#">T-Shirts</a>
+                        <a class="menu-block-item" href="#">Shirts</a>
+                    </div>
+
+                    <div class="menu-block">
+                        <h2 class="menu-block-title pink-color">Kids</h2>
+                        <a class="menu-block-item" href="#">Accessories</a>
+                        <a class="menu-block-item" href="#">Jackets & Coats</a>
+                        <a class="menu-block-item" href="#">Polos</a>
+                        <a class="menu-block-item" href="#">T-Shirts</a>
+                        <a class="menu-block-item" href="#">Shirts</a>
+                        <a class="menu-block-item" href="#">Bags</a>
+                    </div>
+                </nav>
+            </li>
+
+            <li class="right-item">
+                <a href="#"><img src="img/login.svg" alt="account"></a>
+            </li>
+
+            <li class="right-item">
+                <a href="#"><img src="img/cart.svg" alt="cart"></a>
+            </li>
+        </ul>
+    </div>
+</header>
+
+    <div class="main_product">
+        <nav class="product__nav">
+            <div class="wrap-box nav-flex">
+                <h3 class="nav_page-name">NEW ARRIVALS</h3>
+                <ul class="nav-bread">
+                    <li class="bread-item">
+                        <a href="index.html" class="bread-link">HOME</a>
+                    </li>
+
+                    <li class="bread-item">
+                        <a href="#" class="bread-link">MEN</a>
+                    </li>
+
+                    <li class="bread-item">NEW ARRIVALS</li>
+                </ul>
+            </div>
+        </nav>
+        <section class="product__carousel">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="img-box">
+                            <img src="img/featured-1.png" class="carousel-img" alt="...">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="img-box">
+                            <img src="img/featured-2.png" class="carousel-img" alt="...">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="img-box">
+                            <img src="img/featured-3.png" class="carousel-img" alt="...">
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev carousel-button" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next carousel-button" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+        <section class="product__description wrap-box">
+
+            <div class="description-box">
+                <h3 class="description-category">WOMEN COLLECTION</h3>
+                <div class="description-block"></div>
+                <h4 class="description-name">MOSCHINO CHEAP AND CHIC</h4>
+                <p class="description-txt">Compellingly actualize fully researched processes before proactive outsourcing. Progressively syndicate collaborative architectures before cutting-edge services. Completely visualize parallel core competencies rather than exceptional portals. </p>
+                <p class="description-price">561</p>
+            </div>
+
+            <form action="#" class="description-option">
+                <div class="option-block">
+                    <div class="option-sec">
+                        <input class="sec-show" type="checkbox" id="color">
+                        <label class="sec-title" for="color">CHOOSE COLOR</label>
+                        <ul class="sec-list">
+                            <li>
+                                <input type="radio" name="item-color" value="black" id="black">
+                                <label class="sec-item" for="black">Black</label>
+                            </li>
+
+                            <li>
+                                <input type="radio" name="item-color" value="white" id="white">
+                                <label class="sec-item" for="white">White</label>
+                            </li>
+
+                            <li>
+                                <input type="radio" name="item-color" value="gray" id="gray">
+                                <label class="sec-item" for="gray">Gray</label>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="option-sec">
+                        <input class="sec-show" type="checkbox" id="size">
+                        <label class="sec-title" for="size">CHOOSE SIZE</label>
+                        <ul class="sec-list">
+                            <li>
+                                <input type="radio" name="item-color" value="black" id="black">
+                                <label class="sec-item" for="black">Black</label>
+                            </li>
+
+                            <li>
+                                <input type="radio" name="item-color" value="white" id="white">
+                                <label class="sec-item" for="white">White</label>
+                            </li>
+
+                            <li>
+                                <input type="radio" name="item-color" value="gray" id="gray">
+                                <label class="sec-item" for="gray">Gray</label>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="option-sec">
+                        <input class="sec-show" type="checkbox" id="quantity">
+                        <label class="sec-title" for="quantity">QUANTITY</label>
+                        <ul class="sec-list">
+                            <li>
+                                <input type="radio" name="item-color" value="black" id="black">
+                                <label class="sec-item" for="black">Black</label>
+                            </li>
+
+                            <li>
+                                <input type="radio" name="item-color" value="white" id="white">
+                                <label class="sec-item" for="white">White</label>
+                            </li>
+
+                            <li>
+                                <input type="radio" name="item-color" value="gray" id="gray">
+                                <label class="sec-item" for="gray">Gray</label>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="button-flex desc-button">
+                    <button class="browse-button cart-button">
+                        <p class="button-txt">Add to cart</p>
+                    </button>
+                </div>
+            </form>
+
+        </section>
+        <section class="product__other wrap-box">
+            <div class="product-item">
+                <a href="#" class="item-link">
+                    <img src="img/featured-1.png" alt="item" class="item-img">
+                    <div class="item-txt">
+                        <p class="item-name">ELLERY X M'O CAPSULE</p>
+                        <p class="item-description">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                        <p class="item-price pink-color">52.00</p>
+                    </div>
+                </a>
+                <div class="cart-box">
+                    <a href="#" class="cart-link">
+                        <img src="img/cart-link.png" alt="cart">
+                        <p class="cart-link-txt">Add to Cart</p>
+                    </a>
+                </div>
+            </div>
+            <div class="product-item">
+                <a href="#" class="item-link">
+                    <img src="img/featured-2.png" alt="item" class="item-img">
+                    <div class="item-txt">
+                        <p class="item-name">ELLERY X M'O CAPSULE</p>
+                        <p class="item-description">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                        <p class="item-price pink-color">52.00</p>
+                    </div>
+                </a>
+                <div class="cart-box">
+                    <a href="#" class="cart-link">
+                        <img src="img/cart-link.png" alt="cart">
+                        <p class="cart-link-txt">Add to Cart</p>
+                    </a>
+                </div>
+            </div>
+            <div class="product-item">
+                <a href="#" class="item-link">
+                    <img src="img/featured-3.png" alt="item" class="item-img">
+                    <div class="item-txt">
+                        <p class="item-name">ELLERY X M'O CAPSULE</p>
+                        <p class="item-description">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                        <p class="item-price pink-color">52.00</p>
+                    </div>
+                </a>
+                <div class="cart-box">
+                    <a href="#" class="cart-link">
+                        <img src="img/cart-link.png" alt="cart">
+                        <p class="cart-link-txt">Add to Cart</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer">
+
+    <div class="footer__top">
+        <div class="footer__top-content wrap-box">
+            <figure class="footer__top-left">
+                <img class="commentator" src="img/commentator.png" alt="opinion">
+                <figcaption class="comment">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum“</figcaption>
+            </figure>
+            <div class="footer__top-right">
+                <h3 class="footer_header">subscribe</h3>
+                <p class="footer_txt">FOR OUR NEWLETTER AND PROMOTION</p>
+                <form class="footer__form" action="#">
+                    <input class="footer__form-email" type="email" placeholder="Enter Your Email">
+                    <input class="footer__form-submit" type="submit" value="Subscribe">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer__bottom">
+        <div class="footer__bottom-content wrap-box">
+            <p class="footer-copy">
+                &copy 2021 Brand All Rights Reserved.
+            </p>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
 </body>
 </html>
