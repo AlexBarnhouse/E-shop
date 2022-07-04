@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,900&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/677da7751d.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles/style.css">
+  <title>Registration</title>
+</head>
+
+<body>
+<div class="wrapper">
+  <div class="wrapper-top">
+    <header class="header">
+      <div class="header-bar wrap-box">
+        <ul class="header-left">
+          <li class="header-left-item">
+            <a class="header__logo" href="index.html">
+              <img src="img/logo.svg" alt="logo">
+            </a>
+          </li>
+          <li class="header-left-item header-search">
+            <input class="search-show" type="checkbox" id="search-toggle">
+            <label class="search-button" for="search-toggle">
+              <img class="search-img" src="img/search.svg" alt="search">
+            </label>
+
+            <form action="#" class="search-form">
+              <input type="text" class="search-input">
+              <input type="submit" class="search-submit" value="Search">
+            </form>
+          </li>
+        </ul>
+
+        <ul class="header-right">
+          <li class="header-right-item menu-button">
+            <img src="img/menu.svg" alt="menu">
+            <nav class="menu">
+              <div class="menu-block">
+                <h2 class="menu-block-title pink-color">Man</h2>
+                <a class="menu-block-item" href="#">Accessories</a>
+                <a class="menu-block-item" href="#">Bags</a>
+                <a class="menu-block-item" href="#">Denim</a>
+                <a class="menu-block-item" href="#">T-Shirts</a>
+              </div>
+
+              <div class="menu-block">
+                <h2 class="menu-block-title pink-color">Woman</h2>
+                <a class="menu-block-item" href="#">Accessories</a>
+                <a class="menu-block-item" href="#">Jackets & Coats</a>
+                <a class="menu-block-item" href="#">Polos</a>
+                <a class="menu-block-item" href="#">T-Shirts</a>
+                <a class="menu-block-item" href="#">Shirts</a>
+              </div>
+
+              <div class="menu-block">
+                <h2 class="menu-block-title pink-color">Kids</h2>
+                <a class="menu-block-item" href="#">Accessories</a>
+                <a class="menu-block-item" href="#">Jackets & Coats</a>
+                <a class="menu-block-item" href="#">Polos</a>
+                <a class="menu-block-item" href="#">T-Shirts</a>
+                <a class="menu-block-item" href="#">Shirts</a>
+                <a class="menu-block-item" href="#">Bags</a>
+              </div>
+            </nav>
+          </li>
+
+          <li class="header-right-item">
+            <a href="registration.html"><img src="img/login.svg" alt="account"></a>
+          </li>
+
+          <li class="header-right-item">
+            <a href="cart.html"><img src="img/cart.svg" alt="cart"></a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <nav class="bread-nav">
+      <div class="wrap-box nav-flex content-box">
+        <h3 class="nav-page-name">REGISTRATION</h3>
+      </div>
+    </nav>
+
+    <div class="reg-main content-box wrap-box">
+      <form action="#" class="reg-form">
+        <p class="reg-form-title">Your Name</p>
+        <input type="text" name="user-name" placeholder="First Name" class="reg-form-input form-input-txt">
+        <input type="text" name="user-surname" placeholder="Last Name" class="reg-form-input form-input-txt">
+        <div class="form-radio-block">
+          <label for="male" class="form-radio-item">
+            <input type="radio" name="user-sex" value="male" id="male" class="">
+            <p class="form-radio-txt">Male</p>
+          </label>
+          <label for="female" class="form-radio-item">
+            <input type="radio" name="user-sex" value="female" id="female" class="">
+            <p class="form-radio-txt">Female</p>
+          </label>
+        </div>
+        <p class="reg-form-title">Login details</p>
+        <input type="email" name="email" placeholder="Email" class="reg-form-input form-input-txt">
+        <input type="password" name="password" placeholder="Password" class="reg-form-input form-input-txt">
+        <p class="form-pass-instr">Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters</p>
+        <div>
+          <button type="submit" class="reg-form-submit">JOIN NOW<i class="fa-solid fa-arrow-right-long reg-form-submit-arrow"></i></button>
+        </div>
+      </form>
+      <section class="reg-benefit">
+        <h3 class="reg-benefit-header reg-benefit-txt">LOYALTY HAS ITS PERKS</h3>
+        <p class="reg-benefit-txt reg-benefit-prelist">Get in on the loyalty program where you can earn points and unlock serious perks. Starting with these as soon as you join:</p>
+        <ul class="reg-benefit-list reg-benefit-txt">
+          <li class="reg-benefit-list-item">15% off welcome offer</li>
+          <li class="reg-benefit-list-item">Free shipping, returns and exchanges on all orders</li>
+          <li class="reg-benefit-list-item">$10 off a purchase on your birthday</li>
+          <li class="reg-benefit-list-item">Early access to products</li>
+          <li class="reg-benefit-list-item">Exclusive offers & rewards</li>
+        </ul>
+      </section>
+    </div>
+
+
+
+  </div>
+
+  <footer class="footer">
+
+    <div class="footer-top">
+      <div class="footer-top-content wrap-box">
+        <figure class="footer-top-left">
+          <img class="commentator" src="img/commentator.png" alt="opinion">
+          <figcaption class="comment">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum“</figcaption>
+        </figure>
+        <div class="footer-top-right">
+          <h3 class="footer-top-right-header">subscribe</h3>
+          <p class="footer-top-right-txt">FOR OUR NEWLETTER AND PROMOTION</p>
+          <form class="footer-top-right-form" action="#">
+            <input class="form-input-txt footer-form-email" type="email" placeholder="Enter Your Email">
+            <input class="footer-form-submit" type="submit" value="Subscribe">
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="footer-bottom-content wrap-box">
+        <p class="footer-copy">
+          &copy 2021 Brand All Rights Reserved.
+        </p>
+
+        <div class="footer-socials">
+          <a href="#" class="socials-link">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="#" class="socials-link">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="#" class="socials-link">
+            <i class="fa-brands fa-pinterest-p"></i>
+          </a>
+          <a href="#" class="socials-link">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+
+        </div>
+
+      </div>
+    </div>
+  </footer>
+</div>
+
+</body>
+</html>

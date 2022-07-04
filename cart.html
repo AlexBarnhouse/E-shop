@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/677da7751d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Cart</title>
+</head>
+
+<body>
+<div class="wrapper">
+    <div class="wrapper-top">
+        <header class="header">
+            <div class="header-bar wrap-box content-box">
+                <ul class="header-left">
+                    <li class="header-left-item">
+                        <a class="header__logo" href="index.html">
+                            <img src="img/logo.svg" alt="logo">
+                        </a>
+                    </li>
+                    <li class="header-left-item header-search">
+                        <input class="search-show" type="checkbox" id="search-toggle">
+                        <label class="search-button" for="search-toggle">
+                            <img class="search-img" src="img/search.svg" alt="search">
+                        </label>
+
+                        <form action="#" class="search-form">
+                            <input type="text" class="search-input">
+                            <input type="submit" class="search-submit" value="Search">
+                        </form>
+                    </li>
+                </ul>
+
+                <div class="header-right">
+                    <div class="header-right-item menu-button">
+                        <img src="img/menu.svg" alt="menu">
+                        <nav class="menu">
+                            <div class="menu-block">
+                                <h2 class="menu-block-title pink-color">Man</h2>
+                                <a class="menu-block-item" href="#">Accessories</a>
+                                <a class="menu-block-item" href="#">Bags</a>
+                                <a class="menu-block-item" href="#">Denim</a>
+                                <a class="menu-block-item" href="#">T-Shirts</a>
+                            </div>
+
+                            <div class="menu-block">
+                                <h2 class="menu-block-title pink-color">Woman</h2>
+                                <a class="menu-block-item" href="#">Accessories</a>
+                                <a class="menu-block-item" href="#">Jackets & Coats</a>
+                                <a class="menu-block-item" href="#">Polos</a>
+                                <a class="menu-block-item" href="#">T-Shirts</a>
+                                <a class="menu-block-item" href="#">Shirts</a>
+                            </div>
+
+                            <div class="menu-block">
+                                <h2 class="menu-block-title pink-color">Kids</h2>
+                                <a class="menu-block-item" href="#">Accessories</a>
+                                <a class="menu-block-item" href="#">Jackets & Coats</a>
+                                <a class="menu-block-item" href="#">Polos</a>
+                                <a class="menu-block-item" href="#">T-Shirts</a>
+                                <a class="menu-block-item" href="#">Shirts</a>
+                                <a class="menu-block-item" href="#">Bags</a>
+                            </div>
+                        </nav>
+                    </div>
+
+                    <div class="header-right-item">
+                        <a href="registration.html"><img src="img/login.svg" alt="account"></a>
+                    </div>
+
+                    <div class="header-right-item">
+                        <a href="cart.html"><img src="img/cart.svg" alt="cart"></a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <nav class="bread-nav">
+            <div class="wrap-box nav-flex content-box">
+                <h3 class="nav-page-name">SHOPPING CART</h3>
+            </div>
+        </nav>
+
+        <form action="#" class="cart-main content-box wrap-box">
+            <div class="cart-purchase-list">
+                <div class="purchase-item">
+                    <img src="/img/featured-1.png" alt="cart-item" class="purchase-item-img">
+                    <div class="purchase-item-txt">
+                        <a href="product.html" class="purchase-item-name">MANGO  PEOPLE  T-SHIRT</a>
+                        <p class="purchase-item-info">Price: <span class="purchase-item-info-price">$300</span></p>
+                        <p class="purchase-item-info">Color: <span class="purchase-item-info-other">Red</span></p>
+                        <p class="purchase-item-info">Size: <span class="purchase-item-info-other">Xl</span></p>
+                        <p class="purchase-item-info">Quantity: <input type="number" value="1" min="1" max="99" class="purchase-item-info-quantity"></p>
+                    </div>
+                    <button class="purchase-item-delete"><img src="/img/purchase-delete.svg" alt="cross"></button>
+                </div>
+
+                <div class="purchase-item">
+                    <img src="/img/featured-2.png" alt="cart-item" class="purchase-item-img">
+                    <div class="purchase-item-txt">
+                        <a href="product.html" class="purchase-item-name">MANGO  PEOPLE  T-SHIRT</a>
+                        <p class="purchase-item-info">Price: <span class="purchase-item-info-price">$300</span></p>
+                        <p class="purchase-item-info">Color: <span class="purchase-item-info-other">Red</span></p>
+                        <p class="purchase-item-info">Size: <span class="purchase-item-info-other">Xl</span></p>
+                        <p class="purchase-item-info">Quantity: <input type="number" value="1" min="1" max="99" class="purchase-item-info-quantity"></p>
+                    </div>
+                    <button class="purchase-item-delete"><img src="/img/purchase-delete.svg" alt="cross"></button>
+                </div>
+                <div class="cart-purchase-list-buttons">
+                    <button class="button-base button-gray cart-purchase-button">Clear shopping cart</button>
+                    <button class="button-base button-gray cart-purchase-button"><a href="catalog.html" class="continue-shop-link">Continue shopping</a></button>
+                </div>
+            </div>
+
+            <div class="cart-form-block">
+                <div class="cart-shipping">
+                    <p class="cart-shipping-header">SHIPPING ADRESS</p>
+                    <input type="text" placeholder="Bangladesh" class="form-input-txt cart-shipping-input">
+                    <input type="text" placeholder="State" class="form-input-txt cart-shipping-input">
+                    <input type="number" placeholder="Postcode/Zip" class="form-input-txt form-input-number cart-shipping-input" min="1">
+                    <div class="cart-shipping-button-box">
+                        <button class="button-small button-gray cart-shipping-button">Get a quote</button>
+                    </div>
+                </div>
+
+                <div class="cart-total">
+                    <div class="cart-total-price">
+                       <p class="sub-total">SUB TOTAL <span class="sub-total-span">$900</span></p>
+                        <p class="grand-total">GRAND TOTAL <span class="grand-total-span">$900</span></p>
+                    </div>
+                    <button class="button-base button-pink cart-total-button">PROCEED TO CHECKOUT</button>
+                </div>
+
+            </div>
+        </form>
+
+    </div>
+
+    <footer class="footer">
+
+        <div class="footer-top">
+            <div class="footer-top-content wrap-box content-box">
+                <figure class="footer-top-left">
+                    <img class="commentator" src="img/commentator.png" alt="opinion">
+                    <figcaption class="comment">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum“</figcaption>
+                </figure>
+                <div class="footer-top-right">
+                    <h3 class="footer-top-right-header">subscribe</h3>
+                    <p class="footer-top-right-txt">FOR OUR NEWLETTER AND PROMOTION</p>
+                    <form class="footer-top-right-form" action="#">
+                        <input class="form-input-txt footer-form-email" type="email" placeholder="Enter Your Email">
+                        <input class="footer-form-submit" type="submit" value="Subscribe">
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-bottom-content wrap-box content-box">
+                <p class="footer-copy">
+                    &copy 2021 Brand All Rights Reserved.
+                </p>
+
+                <div class="footer-socials">
+                    <a href="#" class="socials-link">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="socials-link">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#" class="socials-link">
+                        <i class="fa-brands fa-pinterest-p"></i>
+                    </a>
+                    <a href="#" class="socials-link">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+
+                </div>
+
+            </div>
+        </div>
+    </footer>
+</div>
+
+</body>
+</html>
