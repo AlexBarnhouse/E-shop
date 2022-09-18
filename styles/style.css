@@ -1519,6 +1519,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .purchase-item-info .purchase-item-info-other {
   color: #6F6E6E;
+  text-transform: capitalize;
 }
 .purchase-item-info .purchase-item-info-quantity {
   outline: none;
